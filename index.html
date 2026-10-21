@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#f8f9fa">
+  <title>メンテナンスのお知らせ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #303740;
+      --muted: #5a6470;
+      --line: #d8dfe5;
+      --accent: #334b60;
+      --background: #fafafa;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { height: 100%; }
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0;
+      padding: 40px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--background);
+      color: var(--text);
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, system-ui, sans-serif;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: 100%;
+      max-width: 680px;
+      padding: 54px 56px 48px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .label {
+      margin: 0 0 15px;
+      color: var(--accent);
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .09em;
+    }
+    h1 {
+      margin: 0;
+      color: #293540;
+      font-size: clamp(1.45rem, 3.5vw, 1.95rem);
+      font-weight: 600;
+      line-height: 1.55;
+      letter-spacing: .035em;
+    }
+    .rule {
+      width: 48px;
+      height: 2px;
+      margin: 28px 0 30px;
+      background: var(--accent);
+    }
+    p {
+      margin: 0 0 18px;
+      font-size: 1rem;
+      line-height: 2;
+    }
+    .detail { color: var(--muted); }
+    .reopen {
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: .91rem;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+    .reopen strong { color: var(--text); font-weight: 600; }
+    @media (max-width: 600px) {
+      body { padding: 20px 16px; }
+      main { padding: 36px 26px; }
+      .rule { margin: 24px 0 26px; }
+      p { font-size: .94rem; }
+      .reopen { font-size: .87rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">ウェブサイトからのお知らせ</p>
+    <h1>メンテナンスのお知らせ</h1>
+    <div class="rule" aria-hidden="true"></div>
+
+    <p>現在、サーバー環境の安全性確認およびメンテナンスを実施しております。</p>
+    <p>このため、一時的に当ウェブサイトをご覧いただけない状況となっております。</p>
+    <p class="detail">皆様にはご不便とご迷惑をおかけいたしますが、何卒ご理解を賜りますようお願い申し上げます。</p>
+
+    <div class="reopen">
+      <strong>公開再開について</strong><br>
+      現時点で再開時刻は未定です。<br>
+      恐れ入りますが、しばらく時間をおいてから再度アクセスいただきますようお願いいたします。
+    </div>
+  </main>
+</body>
+</html>
